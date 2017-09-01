@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+	<title>Page Title</title>
+	</head>
+	<body> <!-- style = "font-family:Verdana" > -->
+
+		<h1>
+			LICORES
+		</h1>
+		
+		
+		<input type=number
+		placeholder="¿ Ingrese su edad ?"
+		id="nombre"
+	
+		/>
+		
+	<script>
+	
+	function saludar() 
+	{
+	//1. encontrar el elemento que necesito.
+	var caja=document.getElementById("nombre");
+	//2. usar la propiedad que necesito.
+	if( caja.value > 17)
+	{
+	alert('es posible consumir bebidas alcoholicas ');
+	window.location.href="menu.html";
+	}else {
+	alert('no tienes la edad permitida para consumir bebidas alcoholicas');
+	}
+	
+	}
+
+	// document.write('hola mundo <b> write </b>');
+		
+		</script>
+		
+		
+		
+		<button onclick="saludar();"> Entrar </button>
+	</body>
+</html>
